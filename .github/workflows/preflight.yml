@@ -14,6 +14,9 @@ jobs:
                   node-version: 14
                   cache: 'yarn'
 
+            - name: Check version
+              run: yarn --version
+
             - name: Install deps
               run: yarn install
 
@@ -21,7 +24,7 @@ jobs:
               run: yarn add pkg
 
             - name: Check outdated
-              run: yarn outdated .
+              run: yarn outdated
 
             - name: Build binary
               run: yarn pkg .
