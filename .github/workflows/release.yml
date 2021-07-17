@@ -2,21 +2,32 @@ name: Release prebuilt binary
 on:
     release:
         types: [created]
+    workflow_dispatch:
+
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - name: Source checkout
+              uses: actions/checkout@v2
 
-            - uses: actions/setup-node@v1
+            - name: Setup node
+              uses: actions/setup-node@v2.2.0
               with:
                   node-version: 14
+                  cache: 'yarn'
+
+            - name: Check version
+              run: yarn --version
 
             - name: Install deps
-              run: yarn install
+              run: yarn
 
             - name: Install pkg
               run: yarn add pkg
+
+            - name: Check outdated
+              run: yarn outdated
 
             - name: Build binary
               run: yarn pkg .
