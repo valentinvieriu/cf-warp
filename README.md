@@ -1,7 +1,7 @@
 # cf-warp
 
 > A simple cli to get [Warp+](https://blog.cloudflare.com/announcing-warp-plus/) as [WireGuard](https://www.wireguard.com/) configuration
-
+>
 > For people who just want a easy way to get a WireGuard of Warp, just download this file: [https://cf-warp.maple3142.net/warp.conf](https://cf-warp.maple3142.net/warp.conf).
 > Source code of the backend can be found [here](https://glitch.com/edit/#!/cf-warp).
 
@@ -77,10 +77,10 @@ cf-warp --license 1a2b3d4e-1a2b3d4e-1a2b3d4e #Your own license key goes here
 
 3. When done, the current config should be sharing the same data quota as the mobile 1.1.1.1
     - If you've paid on your phone, this config should enjoy unlimited data and WARP+.
-    
+
 ### IPv6 doesn't works in Linux by default
 
-Due to the private tunnel local address Linux needs `getaddrinfo` [configuration](https://github.com/maple3142/cf-warp/issues/9#issuecomment-716139339). 
+Due to the private tunnel local address Linux needs `getaddrinfo` [configuration](https://github.com/maple3142/cf-warp/issues/9#issuecomment-716139339).
 
 ## Thanks
 
