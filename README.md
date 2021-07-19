@@ -1,4 +1,4 @@
-# cf-warp
+# FORKED : cf-warp
 
 > A simple cli to get [Warp+](https://blog.cloudflare.com/announcing-warp-plus/) as [WireGuard](https://www.wireguard.com/) configuration
 >
