@@ -14,5 +14,5 @@ FROM gcr.io/distroless/nodejs:14
 WORKDIR /app
 COPY --from=build /app .
 
-#ENTRYPOINT ["/nodejs/bin/node", "cli.js"]
-ENTRYPOINT ["node", "cli.js"]
+ENTRYPOINT ["/nodejs/bin/node", "cli.js"]
+#ENTRYPOINT ["node", "cli.js"]
