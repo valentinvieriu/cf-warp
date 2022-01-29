@@ -10,9 +10,9 @@ on:
   pull_request:
   workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
+#concurrency:
+#  group: ${{ github.workflow }}
+#  cancel-in-progress: true
 
 permissions: read-all
 
@@ -47,7 +47,7 @@ jobs:
         uses: github/super-linter/slim@d92f3364de01c46cf8c32774d075d2419cbc7ece # v4
         #uses: docker://ghcr.io/github/super-linter:slim-v4
         env:
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JAVASCRIPT_DEFAULT_STYLE: prettier
