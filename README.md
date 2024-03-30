@@ -1,5 +1,7 @@
 # FORKED : cf-warp
 
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/jauderho/cf-warp/badge)](https://securityscorecards.dev/viewer/?uri=github.com/jauderho/cf-warp)
+
 > A simple cli to get [Warp+](https://blog.cloudflare.com/announcing-warp-plus/) as [WireGuard](https://www.wireguard.com/) configuration
 >
 > For people who just want a easy way to get a WireGuard of Warp, just download this file: [https://cf-warp.maple3142.net/warp.conf](https://cf-warp.maple3142.net/warp.conf).
